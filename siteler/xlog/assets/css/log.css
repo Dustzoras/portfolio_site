@@ -1,0 +1,130 @@
+.log-body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    padding:5% 0 5% 0;
+}
+.log-head {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+.log-head > img{
+    width: 50%;
+}
+.log-head > .log-title{
+    width: 45% ;
+    gap: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.log-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0% 5%;
+    gap: 40px;
+    flex-direction: column;
+}
+.log-1 >img{
+    width: 90%;
+}
+.log-3{
+    display: none;
+    position: absolute;
+}
+.log-1 > ul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: disc;
+    margin-left: 10px ;
+}
+li.none-list{
+    list-style: none;
+}
+div.gray-bar-log {
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #edeef3 !important;
+}
+.text-log{
+    gap: 10px ;
+    display: flex;
+    flex-direction: column;
+}
+.wide{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;   
+    height: fit-content;
+    background-color: #edeef3;
+    padding: 4% 0;
+}
+.wide-in{
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+div.table-port{
+    width: 100%;
+    height: fit-content;
+    padding: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.table-port > ul{
+    display: flex;
+    gap: 15px;
+    list-style-type:disc;
+    flex-direction: column;
+    margin-left: 15px;
+}
+@media screen and (max-width: 1000px){
+    .log-1{
+        flex-direction: column;
+    }
+    .log-1 > ul{
+        width: 100%;
+    }
+    .log-head{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .log-head >.log-title{
+        width: 100% !important;
+        text-align: center;
+        display: grid;
+        place-items: center !important;
+    }
+    .log-head >img{
+        width: 65%;
+    }
+    .log-title{
+        min-width: auto !important;
+    }
+}

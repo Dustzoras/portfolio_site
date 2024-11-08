@@ -1,0 +1,128 @@
+div.speed-limit-body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding:  0;
+}
+
+.speed-head {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.speed-head > img{
+    width: 40%;
+    min-width: 350px;
+}
+.speed-head > .speed-title{
+    width: 50% ;
+    gap: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    min-width: 425px !important;
+}
+div.blue-bar{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+
+    gap: 2rem;
+
+}
+div.text-speed{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: start;
+    height: fit-content;
+    align-self: end;
+}
+.wide-bar-bandwidth{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.wide-bar-bandwidth > img{
+    width: 35%;
+}
+.text-bandwidth{
+    width: 60%;
+}
+@media screen and (max-width:1200px) {
+    .speed-head{
+        display: grid;
+        place-items: center;
+        gap: .5rem;
+    }
+    .speed-title{
+        width: 100% !important;
+        justify-content: cente !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+@media screen and (max-width:1115px) {
+    .wide-bar-bandwidth{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .text-bandwidth{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .wide-bar-bandwidth > img{
+        width: 60%;
+    }
+    div.speed-limit-body {
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:920px) {
+
+    .speed-head > img {
+        width: 60%;
+    }
+}
+@media screen and (max-width:855px) {
+    .blue-bar{
+        display: grid;
+        place-items: center;
+    }
+    div.text-speed{
+        width: 100% !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .speed-head > img{
+        min-width: auto !important;
+    }
+    .speed-head > .speed-title{
+        min-width: auto !important;
+    }
+    .text-speed{
+        min-width: auto !important;
+    }
+}

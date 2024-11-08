@@ -1,0 +1,26 @@
+.features-slider{
+    height: 40rem ;
+    min-width: fit-content !important;
+}
+div.kamera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ref-img .item img{
+    width: 80px;
+}
+@media screen and (max-width: 650px) {
+    .kamera{
+    flex-direction: column-reverse;
+    }
+    div.kamera > div{
+    width: 100%;
+    }
+    div.kamera > img{
+    width: 50%;
+    }
+    .features-slider{
+        height: 25rem;
+    }
+}

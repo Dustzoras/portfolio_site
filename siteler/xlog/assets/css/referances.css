@@ -1,0 +1,74 @@
+.body-ref{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 40px;
+    padding:5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.referances{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgb(227, 227, 227);
+    text-align: start;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+div.absolute{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    left: 190px;
+    background-color :#c6c8d4 ;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    color: white;
+    transition: 300ms;
+    opacity: .94;
+    border-radius: 5px 0px 0px 5px;
+}
+.referances:hover .absolute{
+    left: 0;
+    border-radius: 0px;
+    background-color: #ee000c !important;
+}
+.referances:hover img{
+    filter: grayscale(1);
+}
+.referances > img , svg{
+    width: 35%;
+    transition: 300ms;
+}
+.condensed > img , svg{
+    height: 70%;
+    transition: 300ms;
+}
+.wide > img , svg{
+    width: 50%;
+    transition: 300ms;
+}
+.wide-2 > img , svg{
+    width: 70%;
+    transition: 300ms;
+}
+h3.ref{
+    font-size: .65rem;
+    font-weight: 400;
+    line-height: 150%;
+    width: 50%;
+}
+@media screen and (max-width:490px) {
+    .referances{
+        width: 150px;
+        height: 80px;
+    }
+    div.absolute{
+        left: 140px ;
+    }
+}

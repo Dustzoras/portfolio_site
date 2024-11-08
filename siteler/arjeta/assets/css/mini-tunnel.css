@@ -1,0 +1,41 @@
+div.slider-mini{
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(180deg, #A3B9CC, #F2F9FF);
+}
+.mini-head{
+    width: 70%;
+}
+.mini-menu{
+    display: flex;
+}
+.mini-wifi{
+    width: 45%;
+}
+table.mini-t{
+    width: 100%;
+    display: flex;
+}
+table.mini-t > tbody{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    flex-direction: column;
+}
+table.mini-t tr{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed gray;
+}
+@media screen and (max-width:1000px) {
+    .mini-menu{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .mini-wifi{
+        width: 80%;
+    }
+}

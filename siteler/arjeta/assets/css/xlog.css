@@ -1,0 +1,33 @@
+.speed-limit{
+    width: 45%;
+}
+.x2-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+.hotspot{
+    width: 42%;
+}
+.xlog-ul{
+    flex-wrap: wrap;
+    list-style: disc;
+    padding-left: 1rem;
+    color: rgb(94, 94, 94);
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+@media screen and (max-width:700px){
+    .x2-menu{
+        flex-direction: column-reverse;
+    }
+    .hotspot{
+        width: 85%;
+    }
+    .speed-limit{
+        width: 65%;
+    }
+    .fdirection-col{
+        flex-direction: column;
+    }
+}

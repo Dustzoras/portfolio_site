@@ -1,0 +1,291 @@
+img.tunnel-product{
+    width: 70%;
+}
+.mini-page{
+    padding: 0 !important;
+}
+.body-mini{
+    width: 100%;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% !important;
+    overflow: hidden;
+    padding-bottom: 5%!important;
+}
+div.title-mini{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding: 7%;
+}
+div.gray{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: #edeef3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+div.buttonlar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+div.buttonlar > button{
+    width: 40%;
+}
+div.title-mini > img {
+    width: 80%;
+}
+div.slider > h1{
+    color: white !important;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+.title-p{
+    width: 60%;
+}
+.tunnel-about{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.tunnel-about > img{
+    width: 70%;
+}
+
+div.tunnel-div{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+div.tunnel-div > img {
+    width: 100%;
+}
+.tunnel-1{
+    width: 100% !important;
+    height: fit-content;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.tunnel-1 > svg *{
+    fill: #333;
+    opacity: 1;
+}
+.tunnel-1 > img{
+    width: 100%;
+
+}
+.tunnel-inside > img{
+    width: 50%;
+}
+.tunnel-inside{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+div.classic-div{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.text-tunnel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.wifi{
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 4rem 7%;
+    gap: 1rem;
+}
+.wifi > img{
+    width: 40%;
+    position: relative;
+    top: -40px;
+}
+div.classic-div-half{
+    width: 55%;
+    text-align: start;
+}
+.tunnel-div2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem   !important;
+}
+.tunnel-div2 > img{
+    width: 50%;
+}
+.text-tunnel-2{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.operation-type{
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.model-mini{
+    width: 100%;
+    display: grid;
+    place-items: start;
+    gap: 2rem;
+}
+table.mini-t{
+    width: 100%;
+    display: flex;
+}
+table.mini-t > tbody{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    flex-direction: column;
+}
+table.mini-t tr{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed gray;
+}
+.operation-1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 20px !important;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    border-radius: 10px;
+}
+.entegrasyon{
+    width: 100%;
+    padding-left: 20px;
+    height: fit-content;
+    position: absolute;   
+}
+div.table-mini{
+    width: 100%;
+    margin-top: 30px;
+}
+.table-mini-1{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom: #333 1px solid;
+    font-size: 1.1rem;
+}
+.table-features{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.table-hover-mini{
+    height: 0px !important;
+    overflow: hidden;
+    transition: 400ms;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+.table-hover-mini:hover{
+    height: 100px !important;
+    
+}
+.table-mini-1:hover + .table-hover-mini{
+    height: 100px !important;
+}
+@media screen and (max-width:970px){
+    .reverse-tunnel{
+        flex-direction: column-reverse !important;
+    }
+    .tunnel-div2{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .tunnel-div2 > img{
+        width: 80%;
+    }
+    .body-mini{
+        gap: 2rem;
+        padding-top: 2% !important;
+    }
+    div.classic-div-half{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    div.wifi{
+        flex-direction: column-reverse;
+    }
+    div.wifi > img {
+        width: 80%;
+        top: 0;
+    }
+    div.wifi > div{
+        width: 100%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+}
+@media screen and (max-width:600px){
+    .operation-1{
+        min-width: auto !important;
+    }
+    .text-tunnel-2{
+        min-width: auto !important;
+    }
+    .text-tunnel{
+        min-width: auto !important;
+    }
+    .tunnel-1{
+        height: fit-content;
+    }
+    *{
+        min-width: auto !important;
+    }
+   
+}

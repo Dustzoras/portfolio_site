@@ -1,0 +1,170 @@
+div.mac-filter-body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.mac-head {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mac-head > img{
+    width: 40%;
+    height: auto;
+}
+.mac-head > .head-title{
+    width: 50%;
+    gap: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+div.blue-bar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.text-mac{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    gap: 20px;
+}
+.dinamik-vlan{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.dinamik-vlan > img{
+    width: 95%;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.normal-radius{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.normal-radius > img{
+    width: 65%;
+}
+.normal-mac{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 1100px){
+    .mac-head{
+        display: grid;
+        gap: 10px;
+        place-items: center;
+    }
+    .mac-head > img{
+        width: 50%;
+        position: relative;
+        top: 5rem;
+        z-index: 1;
+    }
+    .mac-head > .head-title{
+        text-align: center;
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 920px){
+    .normal-radius{
+        flex-direction: column;
+        align-items: center;
+    }
+    .normal-radius > img{
+        width: 70%;
+    }
+    .normal-mac{
+        width: 90%;
+        text-align: center;
+    }
+    .mac-head{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .mac-head > svg{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    div.text-mac{
+        width: 100% !important;
+        gap: 0px !important;
+    }
+    .blue-bar{
+        flex-direction: column;
+        gap: 40px !important;
+    }
+    .mac-head > svg{
+        min-width: 200px;
+    }
+    .mac-head{
+        gap: 10px !important;
+    }
+
+    .dinamik-vlan > img{
+        min-width: 220px !important;
+    }
+    .normal-radius >img{
+        min-width: 220px;
+    }
+    .normal-radius{
+        gap: 10px !important;
+        margin: 20px;
+    }
+    .normal-mac{
+        gap: 10px !important;
+        margin: 0px !important;
+    }
+    .text-mac{
+        min-width: auto !important;
+    }
+}

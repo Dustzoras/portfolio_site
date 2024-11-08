@@ -1,0 +1,62 @@
+.contact-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.ref-contact{
+    justify-content: start;
+    filter: grayscale();
+}
+.contact-title{
+    padding: 9% 5;
+}
+.img-location-contact{
+    width: 36%;
+}
+.col-1contact{
+    width: 35%;
+}
+.col-2contact{
+    width: 65%;
+}
+.contact-div{
+    display: flex;
+    justify-content: space-between;
+}
+.personal-info > input{
+    padding: .5rem;
+    border-bottom: .11rem dashed gray;
+}
+.iletisim{
+    display: flex;
+    justify-content:space-between;
+}
+textarea{
+    background-color: rgba(128, 128, 128, 0.226) !important;
+    resize: none;
+    padding: .7rem !important;
+}
+
+
+@media screen and (max-width:800px) {
+    .contact-1{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .iletisim{
+        flex-direction: column;
+    }
+    .personal-info{
+        width: 100%;
+    }
+    .col-2contact{
+        width: 100%
+    }
+}
+@media screen and (max-width:700px) {
+    .contact-col-res{
+        flex-direction: column-reverse;
+    }
+    .img-location-contact{
+        width: 55%;
+    }
+}

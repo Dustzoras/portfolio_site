@@ -1,0 +1,25 @@
+div.div-5651{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 5% 15%;
+    gap: 2rem;
+}
+ul.list{
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+ul.list li{
+    width: 100%;
+}
+div.line{
+    height: 0px ;
+    width: 100% !important;
+    border-bottom: 1px dashed rgb(170, 170, 170) ;
+}
+ul.list a{
+    font-size: .9rem;
+}

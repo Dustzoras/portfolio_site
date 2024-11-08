@@ -1,0 +1,101 @@
+div.application-filter-body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    padding: 5% 0;
+}
+.application-head {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.application-head > img{
+    width: 30%;
+}
+.application-head > svg{
+    width: 40%;
+    min-width: 350px;
+}
+.application-head > .head-title{
+    width: 50%;
+    gap: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+div.gray-bar{
+    width: 100%;
+    height: fit-content;
+    padding: 5% ;
+    display: grid;
+    place-items: center;
+    background: #F0F2F6;
+}
+div.text-application{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+    align-self: end;
+}
+.wide{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap:3rem;
+    text-align: center;
+    
+}
+.wide-in{
+    display: grid;
+    place-items: center;
+    width: 43%;
+}
+.features-application-filter{
+    width: 70%;
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width:1150px) {
+    .application-head{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .application-head > img{
+        width: 40%;
+        min-width: auto!important;
+    }
+    .application-head > .head-title{
+        width: 90%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .wide{
+    padding-bottom: 5%;
+    }
+}
+@media screen and (max-width:800px) {
+   
+    .wide{
+        flex-direction: column;
+        align-items: center;
+    }
+    .wide-in{
+        width: 90%;
+    }
+   
+}

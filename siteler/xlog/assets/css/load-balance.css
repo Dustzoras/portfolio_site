@@ -1,0 +1,165 @@
+ div.speed-1{
+    width: 45%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-width: 552px;
+}
+div.load-balance-body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.load-b-1 > img{
+    width: 40%;
+    min-width: 370px;
+}
+.load-b-1{
+    display: flex;
+    justify-content: space-around;
+    width: 100% ;
+    align-items: center;
+    gap: 2rem ;
+    flex-wrap: wrap;
+}
+.load-b-2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+.think{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.think-container{
+    width: 50%;
+    display: grid;
+    gap: 2rem;
+}
+.think > img{
+    width: 30%;
+}
+.think-in{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    text-align: start;
+    place-items: center;
+}
+.b-2-in{
+    width: 100%;
+    height: fit-content;
+    min-width: 520px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.load-b-3 > img{
+    width: 75%;
+    min-width: 350px;
+}
+.load-b-3{
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: fit-content;
+}
+.b-3-in{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+@media screen and (max-width:1100px){
+    div.b-2-in{
+        min-width: auto !important;
+        align-items: center;
+    }
+}
+@media screen and (max-width:920px){
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .speed-1{
+        justify-content: center !important;
+        align-items: center;
+    }
+    .think-in{
+        min-width: auto;
+    }
+    .think-in > img{
+        min-width: auto;
+        width: 35%;
+    }
+    .load-b-1 > img{
+        min-width: auto !important;
+    }
+}
+@media screen and (max-width:1100px){
+    .load-b-2 , .load-b-3 , .load-b-1 , .speed-1{
+        text-align: center;
+        display: grid !important;
+        place-items:  center !important;
+    }
+    div.speed-1{
+        width: 100%;
+    }
+    .think{
+        display: grid;
+        place-items: center;
+        gap: 0;
+    }
+    .think > img{
+        width: 55%;
+    }
+    .think > .think-container{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .think-in{
+        text-align: center;
+    }
+ 
+}
+@media screen and (max-width:920px){
+    .speed-1{
+        min-width: auto !important;
+        width: 100% !important;
+    }
+    .load-b-2 > svg{
+        min-width: 150px;
+    }
+    .load-b-1 > img{
+        width: 65%;
+    }
+    
+}
+@media screen and (max-width:420px){
+    .b-2-in{
+        align-items: center;
+    }
+    .load-b-3 > svg{
+        min-width: 200px !important;
+    }
+    .load-b-2, .load-b-3, .load-b-1{
+        gap: 10px;
+    }
+}

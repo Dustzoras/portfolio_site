@@ -1,0 +1,55 @@
+div.guvenlik-logo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+div.guvenlik-1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+div.guvenlik-1 img{
+    width: 70%;   
+}
+div.guvenlik-logo> :nth-child(2){
+    align-items: center;   
+}
+div.renk{
+    display: flex;
+    justify-content: space-between;
+}
+div.renk > div{
+    width: 27%;
+}
+div.guvenlik-logo a:hover{
+    color: #0070c9 !important;
+}
+.birlikte-kullanım{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width: 850px) {
+    .guvenlik-1{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    div.guvenlik-1 img{
+        width: 50%;   
+    }
+    div.guvenlik-1> div{
+        width: 100%;   
+    }
+}
+@media screen and (max-width: 650px) {
+    .renk{
+        flex-direction: column;
+    }
+    .renk > div{
+        width: 70% !important;
+        margin: 0 auto;
+    }
+}

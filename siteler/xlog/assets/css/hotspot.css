@@ -1,0 +1,355 @@
+span.title{
+    display: grid;
+    place-items: center;
+}
+.body-features-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+div.features-container  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+div.in-container  {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+div.in-container  img{
+    width: 30%;
+
+}
+.features-text{
+    display: flex;
+    width: 43%;
+    justify-content: center;
+    height: fit-content;
+    gap: 15px;
+    flex-direction: column;
+    min-width: 410px;
+}
+.features-in{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.features-container-in{
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.user-log-in{
+    width: 25%;
+}
+.user-mac{
+    width: 30% ;
+}
+.features-container-in > img{
+    width: 30% !important;
+    height: auto;
+}
+.features-in div + div img{
+    width: 30% ;
+    height: auto;
+}
+
+.hotspot-user{
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    background-color: #edeef3 !important;
+}
+.in-wide{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.in-wide > div{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-width: 345px;
+}
+.in-wide > div > div{
+    gap: 10px;
+}
+
+.wide-2-in{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.entegrasyon{
+    width: 100%;
+    padding-left: 20px;
+    height: fit-content;
+    position: absolute;   
+}
+
+.table-1{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom: #333 .8px solid;
+}
+.table-features{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+div.table-outside{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 50px;
+}
+div.table{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    min-width: 310px;
+}
+.table-hover{
+    height: 0px !important;
+    overflow: hidden;
+    transition: 400ms;
+    padding-top: 10px;
+}
+.table-hover:hover{
+    height: 100px !important;
+}
+
+.table-1:hover + .table-hover{
+    height: 100px !important;
+}
+/* details table*/
+.details-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    gap: 2rem;
+
+}
+.details-hotspot{
+    width: 50%;
+    gap: 1rem;
+    display: grid;
+    place-items: start;
+}
+details.hotspot-table{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.hotspot-summary::-webkit-details-marker{
+    display: none;
+}
+.hotspot-summary{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px dashed #3f3e51;
+    margin-bottom: .5rem;
+}
+/* details table*/
+@media screen and (max-width:1150px){
+    .table-outside{
+        /*
+        display: grid;
+        place-items: center;       
+        */
+    }
+    .in-wide{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .in-wide > div{
+        width: 100%;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+    .reverse-wide{
+        flex-direction: column-reverse !important;
+    }
+    .table-outside > div.table{
+        width: 45%;
+    }
+    .table-outside > :last-child{
+        width: 100% !important;
+    }
+    .features-in div + div img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:870px){
+    .features-in div.features-container-in{
+        width: 100% !important;
+    }
+    .features-in{
+        gap: 3rem;
+    }
+    .features-container-in img{
+        width: 45%;
+        height: auto;
+    }
+    .features-container-in > .features-in div + div img{
+        width: 45%  !important;
+        height: auto;
+    }
+}
+@media screen and (max-width:800px){
+    .features-text >div{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .features-text {
+        align-items: center;
+        width: 90%;
+        min-width: 370px !important;
+    }
+    div.in-container  {
+        gap: .4rem;
+    }
+    div.features-container{
+        gap: 4 rem;
+    }
+    .details-container{
+        flex-direction: column;
+    }
+    .details-hotspot{
+        width: 100%;
+    }
+}
+@media screen and (max-width:745px){
+    .table-outside{
+        display: grid;
+        place-items: center;
+    }
+    .table-outside div.table{
+        width: 100%;
+    }
+    div.table *{
+        min-width: auto !important;
+    }
+    .hotspot-user{
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:620px){
+    .in-wide{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .features-container-in >div{
+        align-items: center;
+        gap: .3rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .in-wide > div {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        width: 90%;
+    }
+    .in-wide > div > div{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .in-wide{
+        padding: 20px 0;
+    }
+    .reverse-wide{
+        flex-direction: column-reverse;
+    }
+    .user-mac , .user-log-in{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width:400px){
+    .features-text > div{
+        width: 80%;
+    }
+    .features-in div.features-container-in{
+        width: auto !important;
+        min-width: auto !important;
+    }
+    .in-wide > div{
+        width: 80%;
+        min-width: auto;
+    }
+    div.table-features{
+        width: 75% !important;
+    }
+    .in-wide > svg{
+        min-width: 100px;
+    }
+    .features-container-in svg{
+        width: 50%;
+    }
+    .features-text{
+        min-width: 100% !important;
+    }
+    *{
+        min-width: auto !important;
+    }
+    .features-container-in img{
+        width: 30%;
+        height: auto;
+    }
+    .features-in div + div img{
+        width: 30% ;
+        height: auto;
+    }
+}

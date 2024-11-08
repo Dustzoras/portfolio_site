@@ -1,0 +1,47 @@
+.narbulut-logo{
+    width: 20% !important;
+}
+.narbulut-slider{
+    display: flex;
+}
+img.narbulut-mascot{
+    width: 35%;
+}
+.menu-c1{
+    display: flex;
+    justify-content: space-around;
+}
+.narbulut-mas2{
+    width: 40%;
+}
+.narbulut-uclu-menu{
+    display: flex;
+    justify-content: space-around;
+}
+.c-uclu{
+    width: 30%;
+
+}
+.menu-clist{
+    width: 75% !important;
+}
+@media screen and (max-width:900px) {
+    .menu-c1{
+        flex-direction: column;
+        place-items: start;
+    }
+    .narbulut-uclu-menu{
+        flex-direction: column;
+    }
+    .c-uclu{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .narbulut-slider  h1.title-2{
+        font-size: 1.2rem;
+    }
+    .narbulut-slider  h1.title-3{
+        font-size: 2.2rem;
+    }
+}
